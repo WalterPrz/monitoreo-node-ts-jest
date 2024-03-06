@@ -13,3 +13,12 @@ MAILER_SECRET_KEY=
 
 PROD=false
 ```
+3. realizar el comando
+```
+npm install
+```
+4. realizar el siguiente comando:
+```
+npx prisma generate
+npx prisma migrate dev
+```
