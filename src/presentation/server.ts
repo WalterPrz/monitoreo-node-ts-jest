@@ -16,12 +16,12 @@ const emailService = new EmailService();
 export class Server {
     public static async start() {
         console.log('Server started...');
-        // new SendEmailLogs(emailService, logRepository).execute(['aledanielalopez@gmail.com', 'walter2perez@gmail.com'])
+        // new SendEmailLogs(emailService, logRepository).execute(['@gmail.com', 'w@gmail.com'])
 
 
 
         // emailService.sendEmail({
-        //     to: 'walter2perez@gmail.com', subject: 'Logs de sistema', htmlBody: `
+        //     to: '@gmail.com', subject: 'Logs de sistema', htmlBody: `
         //     <h3> Logs de sistema - NOC </h3>
         //     <p>texto de relleno</p>
         //     <p>Ver logs adjuntos</p>
