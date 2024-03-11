@@ -3,13 +3,13 @@ import { envs } from '../../config/plugins/env.plugin';
 import { LogRepository } from '../../domain/repository/log.repository';
 import { LogEntity, LogSeverityLevel } from '../../domain/entities/log.entity';
 
-interface SendMailOptions {
+export interface SendMailOptions {
     to: string | string[];
     subject: string;
     htmlBody: string;
     attachments?: Attachments[];
 }
-interface Attachments {
+export interface Attachments {
     fileName: string,
     path: string,
 }
@@ -40,7 +40,7 @@ export class EmailService {
                 message: 'Email sent',
                 origin: 'email.service.ts'
             })
-            console.log(sentInformation)
+            // console.log(sentInformation)
             return true
         } catch (error) {
             const log = new LogEntity({

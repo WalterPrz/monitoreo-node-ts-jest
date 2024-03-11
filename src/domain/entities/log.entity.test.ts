@@ -24,7 +24,7 @@ describe("log entity", () => {
         expect(log.message).toBe('https://googlddededee.com is not ok. TypeError: fetch failed');
         expect(log.level).toBe(LogSeverityLevel.high);
         expect(log.origin).toBe('check-service.ts');
-        console.log(log.createdAt)
+        // console.log(log.createdAt)
         expect(log.createdAt).toBeInstanceOf(Date)
     })
 
